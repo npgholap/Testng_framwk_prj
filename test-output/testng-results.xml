@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-06T18:15:25 IST" name="Suite" finished-at="2022-09-06T18:16:12 IST" duration-ms="46238">
+    <groups>
+      <group name="Regression">
+        <method signature="OneTest.gmaillinktest()[pri:0, instance:gproject.prac.OneTest@4628b1d3]" name="gmaillinktest" class="gproject.prac.OneTest"/>
+        <method signature="OneTest.imglinktest()[pri:0, instance:gproject.prac.OneTest@4628b1d3]" name="imglinktest" class="gproject.prac.OneTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="OneTest.signinlinktest()[pri:0, instance:gproject.prac.OneTest@4628b1d3]" name="signinlinktest" class="gproject.prac.OneTest"/>
+        <method signature="TwoTest.signin()[pri:-1, instance:gproject.prac.TwoTest@52350abb]" name="signin" class="gproject.prac.TwoTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-09-06T18:15:25 IST" name="Test" finished-at="2022-09-06T18:16:12 IST" duration-ms="46238">
+      <class name="gproject.prac.TwoTest">
+        <test-method is-config="true" signature="init1()[pri:0, instance:gproject.prac.TwoTest@52350abb]" started-at="2022-09-06T18:15:33 IST" name="init1" finished-at="2022-09-06T18:15:37 IST" duration-ms="4539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init1 -->
+        <test-method signature="signin()[pri:-1, instance:gproject.prac.TwoTest@52350abb]" started-at="2022-09-06T18:15:39 IST" name="signin" finished-at="2022-09-06T18:15:42 IST" duration-ms="2857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method signature="emailtxt(java.lang.String)[pri:2, instance:gproject.prac.TwoTest@52350abb]" started-at="2022-09-06T18:15:52 IST" name="emailtxt" data-provider="getData" finished-at="2022-09-06T18:15:58 IST" duration-ms="5355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nishapgholap@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailtxt -->
+        <test-method signature="emailtxt(java.lang.String)[pri:2, instance:gproject.prac.TwoTest@52350abb]" started-at="2022-09-06T18:15:58 IST" name="emailtxt" data-provider="getData" finished-at="2022-09-06T18:16:03 IST" duration-ms="4868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[golap.nish@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailtxt -->
+        <test-method signature="createaccount()[pri:3, instance:gproject.prac.TwoTest@52350abb]" started-at="2022-09-06T18:16:03 IST" name="createaccount" finished-at="2022-09-06T18:16:10 IST" duration-ms="7557" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at gproject.prac.TwoTest.createaccount(TwoTest.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createaccount -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:gproject.prac.TwoTest@52350abb]" started-at="2022-09-06T18:16:11 IST" name="Teardown" finished-at="2022-09-06T18:16:12 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- gproject.prac.TwoTest -->
+      <class name="gproject.prac.OneTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:gproject.prac.OneTest@4628b1d3]" started-at="2022-09-06T18:15:25 IST" name="init" finished-at="2022-09-06T18:15:33 IST" duration-ms="7335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="searchtexttest()[pri:-1, instance:gproject.prac.OneTest@4628b1d3]" started-at="2022-09-06T18:15:37 IST" name="searchtexttest" finished-at="2022-09-06T18:15:39 IST" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchtexttest -->
+        <test-method signature="gmaillinktest()[pri:0, instance:gproject.prac.OneTest@4628b1d3]" started-at="2022-09-06T18:15:42 IST" name="gmaillinktest" finished-at="2022-09-06T18:15:47 IST" duration-ms="4308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmaillinktest -->
+        <test-method signature="imglinktest()[pri:0, instance:gproject.prac.OneTest@4628b1d3]" started-at="2022-09-06T18:15:47 IST" name="imglinktest" finished-at="2022-09-06T18:15:51 IST" duration-ms="4299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imglinktest -->
+        <test-method signature="signinlinktest()[pri:0, instance:gproject.prac.OneTest@4628b1d3]" started-at="2022-09-06T18:15:51 IST" name="signinlinktest" finished-at="2022-09-06T18:15:52 IST" duration-ms="1482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinlinktest -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:gproject.prac.OneTest@4628b1d3]" started-at="2022-09-06T18:16:11 IST" name="Teardown" finished-at="2022-09-06T18:16:11 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- gproject.prac.OneTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
